@@ -1,0 +1,6 @@
+{% load table_view %}
+<a href="/user/logout">Logout</a><br><br><br>
+
+<h1>Hello {{request.user.username}}</h1>
+
+{%table_view%}

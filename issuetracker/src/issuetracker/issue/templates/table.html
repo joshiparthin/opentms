@@ -1,0 +1,14 @@
+<table border="1">
+    <tr>
+        {% for header in headers%}
+            <td>{{header}}</td>
+        {% endfor%}
+    </tr>
+    <tr>
+        {%for row in rows%}
+            {%for cell in row%}
+            <td>{{cell}}</td>
+            {%enfor%}
+        {%endfor%}
+    </tr>
+</table>

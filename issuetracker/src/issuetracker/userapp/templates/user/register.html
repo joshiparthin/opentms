@@ -1,0 +1,11 @@
+<form action="" method="post">
+    {% csrf_token %}
+    {{form.non_field_errors}}
+    {{form.username.label}}: {{ form.username }}<br/>
+    {{form.username.errors}}<br/>
+    Password: {{form.password}}<br/>
+    {{form.password.errors}}<br/>
+    Confirm Password: {{form.confirmPassword}}<br/>
+    {{form.confirmPassword.errors}}<br/>
+    <input type="submit" value="Register" />
+</form>
